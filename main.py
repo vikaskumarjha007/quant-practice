@@ -1,19 +1,15 @@
-# main.py - first interactive program
+def add(a, b):
+    return a + b
 
-def numbers():
-    number1 = int(input("Enter first number: "))
-    number2 = int(input("Enter second number: "))
+def subtract(a, b):
+    return a - b
 
-    total = number1 + number2
-    print(f"The sum of {number1} and {number2} is {total}") 
-
-    difference = number1 - number2
-    print(f"The difference of {number1} and {number2} is {difference}")
-
-    product = number1 * number2
-    print(f"The product of {number1} and {number2} is {product}")
-
-    print(f"The quotient of {number1} and {number2} is {number1 / number2}")
-
+def multiply(a, b):
+    return a * b
 if __name__ == "__main__":
-    numbers()
+    n1 = int(input("Enter first number: "))
+    n2 = int(input("Enter second number: "))
+
+    print(f"Sum: {add(n1, n2)}")
+    print(f"Difference: {subtract(n1, n2)}")
+    print(f"Product: {multiply(n1, n2)}")
