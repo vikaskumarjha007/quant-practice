@@ -1,15 +1,29 @@
-def add(a, b):
-    return a + b
+class Calculator:
+    def __init__(self, number1, number2):
+        self.number1 = number1
+        self.number2 = number2
 
-def subtract(a, b):
-    return a - b
+    def add(self):
+        return self.number1 + self.number2
 
-def multiply(a, b):
-    return a * b
+    def subtract(self):
+        return self.number1 - self.number2
+
+    def multiply(self):
+        return self.number1 * self.number2
+
+    def power(self):
+        return self.number1 ** self.number2
+
+    def modulus(self):
+        return self.number1 % self.number2
+
 if __name__ == "__main__":
     n1 = int(input("Enter first number: "))
     n2 = int(input("Enter second number: "))
-
-    print(f"Sum: {add(n1, n2)}")
-    print(f"Difference: {subtract(n1, n2)}")
-    print(f"Product: {multiply(n1, n2)}")
+    calc = Calculator(n1, n2)
+    print(f"Sum: {calc.add()}")
+    print(f"Difference: {calc.subtract()}")
+    print(f"Product: {calc.multiply()}")
+    print(f"Power: {calc.power()}")
+    print(f"Modulus: {calc.modulus()}")
