@@ -13,5 +13,7 @@ def numbers():
     product = number1 * number2
     print(f"The product of {number1} and {number2} is {product}")
 
+    print(f"The quotient of {number1} and {number2} is {number1 / number2}")
+
 if __name__ == "__main__":
     numbers()
